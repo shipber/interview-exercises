@@ -1,0 +1,8 @@
+{
+  "currency": "USD",
+  "fuel_rate": "0.10",
+  "fees": [
+    {"code": "BASE", "public_amount": "10.00", "cost_amount": "6.00", "discount_percent": "20"},
+    {"code": "HANDLING", "public_amount": "4.00", "cost_amount": "1.00", "discount_percent": "0"}
+  ]
+}
