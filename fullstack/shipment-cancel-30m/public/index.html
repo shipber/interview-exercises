@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>运单取消 · Shipber 现场实操</title>
+    <style>
+      body { max-width: 860px; margin: 48px auto; padding: 0 20px; font: 16px/1.6 system-ui, sans-serif; color: #1e293b; background: #f8fafc; }
+      h1 { margin-bottom: 8px; }
+      p { margin-top: 0; }
+      table { width: 100%; border-collapse: collapse; background: white; }
+      th, td { padding: 14px; text-align: left; border-bottom: 1px solid #cbd5e1; }
+      caption { text-align: left; padding: 12px 0; }
+      button { padding: 6px 14px; cursor: pointer; }
+      button:disabled { cursor: default; }
+      #message { min-height: 26px; color: #334155; }
+      #message[data-kind="error"] { color: #b91c1c; }
+    </style>
+  </head>
+  <body>
+    <h1>运单列表</h1>
+    <p>练习目标：让待发货运单可以取消，取消后刷新页面仍保留结果。详细要求见 TASK.md。</p>
+    <button id="reload" type="button">刷新列表</button>
+    <p id="message" role="status" aria-live="polite"></p>
+    <table>
+      <caption>重启服务后恢复初始数据</caption>
+      <thead><tr><th scope="col">运单号</th><th scope="col">收件人</th><th scope="col">状态</th><th scope="col">操作</th></tr></thead>
+      <tbody id="shipments"></tbody>
+    </table>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
