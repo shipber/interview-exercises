@@ -7,11 +7,11 @@
 | 岗位 | 目录 | 当前题目 |
 | --- | --- | --- |
 | 测试开发 | [test-development](test-development/README.md) | [报价金额验证，30 分钟](test-development/quote-validation-30m/TASK.md) |
-| 全栈研发 | [fullstack](fullstack/README.md) | 暂未发布 |
+| 全栈研发 | [fullstack](fullstack/README.md) | [完成运单取消，30 分钟](fullstack/shipment-cancel-30m/TASK.md) |
 
 ## 开始之前
 
-请先阅读对应题目的 `TASK.md`，了解业务规则、任务要求、时间安排和交付内容。允许使用的工具以题面为准；当前测试开发题允许使用 AI 和公开文档，也可以完全不使用 AI。
+请先阅读对应题目的 `TASK.md`，了解业务规则、任务要求、时间安排和交付内容。当前两道题均允许使用 AI 和公开文档，也可以完全不使用 AI，具体环境和工具要求以题面为准。
 
 实操过程中，请保留实际运行结果，并准备说明你的思路、关键判断和验证过程。遇到题意或环境问题，可以随时向面试官提出。
 
@@ -31,6 +31,17 @@ curl -s -H 'Content-Type: application/json' --data-binary @example.json http://1
 ```
 
 正常样例合计为 `13.20`。端口占用可指定 `--port 8766`；端口受限时可执行 `python3 quote_service.py --quote-file example.json`。结束后 Ctrl+C 停止服务。
+
+## 运行全栈示例
+
+全栈题需要 Node.js 18+ 和浏览器，无需安装第三方依赖。在仓库根目录执行：
+
+```sh
+cd fullstack/shipment-cancel-30m
+node server.mjs
+```
+
+打开 `http://127.0.0.1:8766` 可查看运单列表。取消功能需要按题面完成；启动成功和列表可见只代表环境已就绪。端口占用可用 `PORT=8767 node server.mjs`。结束后 Ctrl+C，重启恢复初始数据。
 
 ## 提交方式
 
