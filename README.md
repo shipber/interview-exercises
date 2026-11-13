@@ -7,7 +7,7 @@
 | 岗位 | 目录 | 当前题目 |
 | --- | --- | --- |
 | 测试开发 | [test-development](test-development/README.md) | [报价金额验证，30 分钟](test-development/quote-validation-30m/TASK.md) |
-| 全栈研发 | [fullstack](fullstack/README.md) | [完成运单取消，30 分钟](fullstack/shipment-cancel-30m/TASK.md) |
+| 全栈研发 | [fullstack](fullstack/README.md) | [给运单列表加上取消功能，30 分钟](fullstack/shipment-cancel-30m/TASK.md) |
 
 ## 开始之前
 
